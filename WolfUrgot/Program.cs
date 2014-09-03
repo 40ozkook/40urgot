@@ -59,6 +59,12 @@ namespace WolfUrgot
             Wolf.SubMenu("Combo").AddItem(new MenuItem("useE", "Use E").SetValue(true));
             Wolf.SubMenu("Combo")
                 .AddItem(new MenuItem("ComboActive", "Combo").SetValue(new KeyBind(32, KeyBindType.Press)));
+            //Harass menu
+            Wolf.AddSubMenu(new Menu("harass", "harass"));
+            Wolf.SubMenu("harass").AddItem(new MenuItem("useQ", "Use Q").SetValue(true));
+            Wolf.SubMenu("harass").AddItem(new MenuItem("useE", "Use E").SetValue(true));
+            Wolf.SubMenu("harass")
+                .AddItem(new MenuItem("HarassActive", "Harass").SetValue(new KeyBind(a, KeyBindType.Press)));
             //Drawings menu:
             Wolf.AddSubMenu(new Menu("Drawings", "Drawings"));
             Wolf.SubMenu("Drawings")
