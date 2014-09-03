@@ -4,7 +4,7 @@ using System.Drawing;
 using LeagueSharp;
 using LeagueSharp.Common;
 
-namespace WolfUrgot
+namespace 40urgot
 {
     internal class Program
     {
@@ -18,7 +18,7 @@ namespace WolfUrgot
         public static List<Spell> SpellList = new List<Spell>();
         public static Spell Q, Q2, W, E;
 
-        public static Menu Wolf;
+        public static Menu 40urgot;
 
         private static void Main(string[] args)
         {
@@ -45,7 +45,7 @@ namespace WolfUrgot
             SpellList.Add(E);
 
             //Base menu
-            Wolf = new Menu("Wolf" + ChampName, ChampName, true);
+            Wolf = new Menu("40" + ChampName, ChampName, true);
             //Orbwalker and menu
             Wolf.AddSubMenu(new Menu("Orbwalker", "Orbwalker"));
             Orbwalker = new Orbwalking.Orbwalker(Wolf.SubMenu("Orbwalker"));
